@@ -1,0 +1,325 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deppy</title>
+	<link rel="stylesheet" href="{% static 'css/deppy.css' %}">
+	
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
+
+	<title>Responsive Footer</title>
+
+	
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="nav" >
+       
+	<!-- <div class="logo">
+
+		<a href="#"><img src="deppy-removebg-preview.png" alt="logo" width="150" height="55" class="logoimg" /></a>
+	</div> -->
+   <div id="mainListDiv" class="main_list" style="width:100vw;background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2042508-jpeg.jpg')no-repeat center fixed; background-position: center top; background-size:cover;height:200%" >
+		<ul class="navlinks"  style="width:100vw;">
+			<li style="padding-left:20px;"><a href="/profile" style="font-size:25px">Profile</a></li>
+			{% comment %} <li style="padding-left:20px;"><a href="#" style="font-size:25px">Services</a></li>
+			<li style="padding-left:20px;"><a href="#" data-toggle="modal" data-target="#myModal1" style="font-size:25px;">Contact</a></li>
+			<li style="padding-left:20px;"><a href="#" data-toggle="modal" data-target="#myModal" style="font-size:25px">About</a></li>
+			<li style="padding-left:20px;"><a href="#" data-toggle="modal" data-target="#myModal2" style="font-size:25px">Team</a></li> {% endcomment %}
+			<form>{% csrf_token %}<li style="position:relative;float:right;left:200px;"><a id="logoutbtn" href="#" style="font-size:25px" >Logout</a></li></form>
+		</ul>
+	</div> 
+	
+</nav>	
+  
+  <!-- Trigger the modal with a button -->
+ <!--  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">A new design for mental health</h4>
+        </div>
+        <div class="modal-body">
+          <p>The modern age has produced many ways to treat mental illness, from talk therapy to first generation digital therapeutics. But new approaches are needed to meet the soaring global demand for accessible solutions that can help people manage symptoms in the moment, and over a lifetime. We’re on a mission to meet the need for a new generation of therapeutics that are as dynamic as the people they serve and the world in which we live. Digital products designed to easily adapt to symptoms and severity, and deliver the right intervention to the right person at the right time.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- car -->
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">A new design for mental health</h4>
+        </div>
+        <div class="modal-body">
+          
+
+<div class="row">
+  <div class="column" style="background-color:#fff;">
+    ,,,,
+    
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+
+          </div>
+      </div>
+      
+    </div>
+  </div>
+
+<div class="contact-container">
+<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h1 class="modal-title" style="text-align: center;">Contact Us</h1>
+        </div>
+        <div class="modal-body">
+          <section id="hire">
+    
+    
+    <form>
+        <div class="field name-box">
+            <input type="text" id="name" placeholder="Who Are You?"/>
+            <label for="name">Name</label>
+            <span class="ss-icon">Name</span>
+        </div>
+
+        <div class="field email-box">
+            <input type="text" id="email" placeholder="name@email.com"/>
+            <label for="email">Email</label>
+            <span class="ss-icon">Email</span>
+        </div>
+
+        <div class="field msg-box">
+            <textarea id="msg" rows="4" placeholder="Your message goes here..."></textarea>
+            <label for="msg">Msg</label>
+            <span class="ss-icon">Msg</span>
+        </div>
+
+        <input class="button" type="submit" value="Send" />
+  </form>
+</section>
+
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+
+  
+
+    <section class="home" style="width:1815px">
+    	
+	
+            <!-- <div class="logo">
+
+			
+			chatbot content -->
+			<div id="container" style="position:relative;left:140px;top:50px;">
+	<aside class="classaside">
+		<header>
+			<input type="text" placeholder="search">
+		</header>
+		<ul>
+			<li>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg" alt="">
+				<div>
+					<a href="#"><h2>Deppy</h2></a>
+					
+				</div>
+			</li>
+		
+		</ul>
+	</aside>
+	<main>
+		<div class="chatboxheader">
+			
+			<div>
+				<h2>Deppy</h2>
+
+			</div>
+			
+		</div>
+		<ul id="chat" >
+		<li class="you">
+				<div class="entete">
+					<span class="status green"></span>
+					<h3></h3>
+					<h2>Deppy</h2>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+               Hey Bud, I am Deppy, your virtual companion!
+				</div>
+				
+			</li>
+			
+			{% for i in obj %}
+					<li class="me"> 
+					<div class="entete"> 
+					<span class="status green"></span> <h2>You</h2> <h3></h3> </div> 
+					<div class="triangle"></div> 
+					<div class="message"> {{i.inpchat}}</div> 
+					</li>
+					<li class="you"> 
+					<div class="entete"> 
+					<span class="status green"></span> <h2>Deppy</h2> <h3></h3> </div> 
+					<div class="triangle"></div> 
+					<div class="message">{{i.replychat}} </div> 
+					</li>
+			{% endfor %}
+		
+			<li class="you">
+				<div class="entete">
+					<span class="status green"></span>
+					<h3></h3>
+					<h2>Deppy</h2>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+               Hey, how are you feeling today?
+				</div>
+				
+			</li>
+					
+			
+		</ul>
+		<div class="chatboxfooter">
+      <form id="sendmessage"> {% csrf_token %}
+		<div class="row">
+			<div class="col-10">
+        <div class="form-group">
+
+				<input type="text" class="form-control" style="height: 40px;font-size:100%;width:100%;" id="messagebox" placeholder="Type your message">
+			</div>
+      </div>
+      <div class="col-2">	
+				<button type="submit" style="height:40px;width:60px;">Send</button>
+			</div>
+	</div>
+</form>
+		</div>
+	</main>
+</div>
+
+			
+
+
+    
+    
+
+
+
+
+</section>
+
+    
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{% static 'js/deppy.js' %}"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <!-- <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+ -->    
+
+		
+		<!-- The content of your page would go here. -->
+
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+         
+				<h3>About<span>Deppy</span></h3>
+
+				<p class="footer-links">
+					<a href="#">profile</a>
+					|
+					<a href="#">home</a>
+					|
+					<a href="#">About</a>
+					|
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">© 2020 Deppy Pvt. Ltd.</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>VESIT COLLEGE </span></p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 22-27782183</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@eduonix.com">dr.deppy@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About Deppy</span>
+					We offer virtual assistant to which you can talk 24/7</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+
+</body>
+</html>
+<!-- rgb(112, 198, 250),rgb(155, 221, 251), -->

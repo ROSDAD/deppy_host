@@ -1,0 +1,49 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% comment %} <img style="background:cover;z-index:1;" src="{% static 'images/signin-bgimg.jpg' %}" alt="" /> {% endcomment %}
+
+
+<body style="height:100vh;width:100vw;">
+<img style="background:cover;background-repeat: no-repeat;background-size: auto;height:100vh;width:100vw;" src="{% static 'images/signin-bgimg.jpg' %}"/>
+  <section style="position:relative;top:-100%;">
+    <div class="container">
+      <div class="user signinBx">
+        <div class="imgBx"><img src="https://wallpapercave.com/wp/wp2411857.jpg" alt="" /></div>
+        <div class="formBx">
+          <form name="signinform" method="post" action="/signin/">
+            <h2>Sign In</h2>
+            {% csrf_token %}
+            <input type="email" name="signinemail" placeholder="Username" />
+            <input type="password" name="signinpass" placeholder="Password" />
+            <input type="submit" name="" value="Login" />
+            <p class="signup">
+              Don't have an account ?
+              <a href="#" onclick="toggleForm();">Sign Up.</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="user signupBx">
+        <div class="formBx">
+          <form name="signupform" method="post" action="/signup/">
+            {% csrf_token %}
+            <h2>Create an account</h2>
+            <input type="text" name="signupuname" placeholder="Username" />
+            <input type="email" name="signupemail" placeholder="Email Address" />
+            <input type="password" name="signuppass" placeholder="Create Password" />
+            <input type="password" name="signupcnfpass" placeholder="Confirm Password" />
+            <input type="submit" name="" value="Sign Up" />
+            <p class="signup">
+              Already have an account ?
+              <a href="#" onclick="toggleForm();">Sign in.</a>
+            </p>
+          </form>
+        </div>
+        <div class="imgBx"><img src="{% static 'images/220-SM902702.jpg' %}" alt="" /></div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+<script src="{% static 'js/login.js' %}"></script>
+
